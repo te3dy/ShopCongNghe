@@ -1,0 +1,14 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@font-face{font-family:Encode Sans Regular;src:url('../fonts/EncodeSans-Regular.ttf');}
+@font-face{font-family:Encode Sans Light;src:url('../fonts/EncodeSans-Light.ttf');}
+@font-face{font-family:Encode Sans Bold;src:url('../fonts/EncodeSans-Bold.ttf');}
+*, h1, h2, h3, h4{font-family:Encode Sans Regular}
+.space{padding-top:60px}
+.big-space{padding-top:120px;}
+
+
+/* Header */
+
+/* Content */
+
+/* Footer */

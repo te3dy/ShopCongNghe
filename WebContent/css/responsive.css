@@ -1,0 +1,58 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){
+	.introduction .u-heading-v6__title::after{display:none}
+	.benefits .u-heading-v6-1.text-center .u-heading-v6__title::before{display:none}
+	.benefits .u-heading-v6-1 .u-heading-v6__title::after{display:none}
+	.benefits .u-heading-v6__title{padding:0!important}
+	.benefits article{min-height:353px}
+	.features .feature-text-2{padding-top:30px;}
+	.features .feature-item-2{padding-left:40px;padding-top:30px;}
+	.price-block{text-align:center}
+	.price-block{border-right:none!important;}
+	.col-lg-5-5{flex:auto;max-width:100%;position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+	.feedback .u-carousel-indicators-v1{right:auto}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px){
+	.introduction .u-heading-v6__title::after{display:none}
+	.benefits .u-heading-v6-1.text-center .u-heading-v6__title::before{display:none}
+	.benefits .u-heading-v6-1 .u-heading-v6__title::after{display:none}
+	.benefits .u-heading-v6__title{padding:0!important}
+	.benefits article{min-height:347px}
+	.features .feature-text-2{padding-top:30px;}
+	.features .feature-item-2{padding-left:40px;padding-top:30px;}
+	.price-block{border-right:none!important;}
+	.price-block{text-align:center}
+	.col-lg-5-5{flex:auto;max-width:100%;position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+	.feedback .js-slide .js-slide-text{min-height:300px}
+	.feedback .u-carousel-indicators-v1{right:auto}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){
+	.introduction .u-heading-v6__title::after{display:none}
+	.benefits article{min-height:283px}
+	.features .feature-text-2{padding-top:30px;}
+	.price-block{border-right:none!important;}
+	.col-lg-5-5{flex:auto;max-width:100%;position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+	.price .u-ns-bg-v1-right--md.g-bg-primary::before{display:none}
+	.feedback .u-carousel-indicators-v1{right:auto}
+	.feedback .js-slide .js-slide-text{min-height:280px}
+	.price-block{text-align:center}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.introduction .u-heading-v6__title::after{display:none}
+	.features .feature-text-2{padding-top:30px;}
+	.feedback .u-carousel-indicators-v1{right:11%}
+}
+
+@media (min-width:1366px){
+	.feedback .u-carousel-indicators-v1{right:13.5%}
+}
+
+@media (min-width:1920px){
+	.feedback .u-carousel-indicators-v1{right:24.6%}
+}
