@@ -35,14 +35,7 @@
 <link rel="stylesheet" href="/Shopcongnghe/css/styles.multipage-education.css">
 <link rel="stylesheet" href="/Shopcongnghe/css/simple-line-icons.css">
 <link rel="stylesheet" href="/Shopcongnghe/css/custom.css">
-
-<!-- script src="/Shopcongnghe/js/jquery.js"></script>
-<script src="/Shopcongnghe/js/jquery-1.7.1.js"></script>
-<script src="/Shopcongnghe/js/cloudzoom.js"></script>
-<script type="text/javascript">
-        CloudZoom.quickStart();
-        var x = 1;
-     </script--> 
+<link rel="stylesheet" href="/Shopcongnghe/css/responsive.css">
 
 </head>
 <body>
@@ -61,8 +54,8 @@
             </button>
             <!-- End Responsive Toggle Button -->
             <!-- Logo -->
-            <a href="index.jsp" class="navbar-brand">
-              <img src="Images/ttsLogo.png" alt="Image Description">
+            <a href="/Shopcongnghe" class="navbar-brand">
+              <img src="/Shopcongnghe/Images/ttsLogo.png" alt="Image Description">
             </a>
             <!-- End Logo -->
 
@@ -86,7 +79,7 @@
 						String tendsp=dsDSP.getString(2);
 						%>
                 <li class="nav-item hs-has-sub-menu g-mx-10--lg">
-                  <a href="ChitietDongsanpham.jsp?madongsp=<%=madongsp%>" 
+                  <a href="/Shopcongnghe/ChitietDongsanpham.jsp?madongsp=<%=madongsp%>" 
                		class="nav-link g-px-0 g-color-primary--hover" 
                		id="<%=navLinkId %>" 
                		aria-haspopup="true" aria-expanded="false" 
@@ -108,7 +101,7 @@
 								%>
                     <li class="dropdown-item">
                       <a class="nav-link g-px-0 g-color-primary--hover" 
-                      href="Chitietnhomsanpham.jsp?madongsp=<%=madongsp%>&manhomsp=<%=manhomsp%>">
+                      href="/Shopcongnghe/Chitietnhomsanpham.jsp?madongsp=<%=madongsp%>&manhomsp=<%=manhomsp%>">
                       	<%=tennsp %>
                       </a>
                     </li>
@@ -123,16 +116,6 @@
 					}
 					%>
                 </li>
-                <!-- Search -->
-                <li class="nav-item g-ml-10--lg ml-auto my-auto">
-                  <form id="searchform-1" action="Timkiem.jsp" method="get" class="input-group u-shadow-v19 g-brd-primary--focus g-rounded-20">
-                    <input name="q" class="form-control g-brd-none g-bg-white g-font-size-12 text-uppercase g-rounded-left-20 g-pl-20 g-py-9" type="text" placeholder="Tìm kiếm sản phẩm ...">
-                    <button class="btn input-group-addon d-flex align-items-center g-brd-none g-color-white g-bg-primary g-bg-primary-light-v1--hover g-font-size-13 g-rounded-right-20 g-transition-0_2" type="submit">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </form>
-                </li>
-                <!-- End Search -->
                 <!-- Cart -->
                 <li class="nav-item g-ml-10--lg m-auto">
                   <a class="u-link-v5 u-shadow-v19 g-color-white--hover g-bg-white g-bg-primary--hover g-rounded-20 g-px-18 g-py-8" href="giohang.jsp">
@@ -149,10 +132,10 @@
                 if(khachhang_obj==null){
                 %>
                 <li class="nav-item g-ml-10--lg m-auto">
-                  <a class="u-link-v5 u-shadow-v19 g-color-white--hover g-bg-white g-bg-primary--hover g-rounded-20 g-px-18 g-py-8" href="client/DangKy.jsp">Đăng ký</a>
+                  <a class="u-link-v5 u-shadow-v19 g-color-white--hover g-bg-white g-bg-primary--hover g-rounded-20 g-px-18 g-py-8" href="/Shopcongnghe/client/DangKy.jsp">Đăng ký</a>
                 </li>
                 <li class="nav-item g-ml-10--lg m-auto">
-                  <a class="u-link-v5 u-shadow-v19 g-color-white--hover g-bg-white g-bg-primary--hover g-rounded-20 g-px-18 g-py-8" href="client/Dangnhap.jsp">Đăng nhập</a>
+                  <a class="u-link-v5 u-shadow-v19 g-color-white--hover g-bg-white g-bg-primary--hover g-rounded-20 g-px-18 g-py-8" href="/Shopcongnghe/client/Dangnhap.jsp">Đăng nhập</a>
                 </li>
                 <%
 				}else{
@@ -169,7 +152,7 @@
 	                   	aria-labelledby="nav-link-4">
 	                   	<li class="dropdown-item">
 	                    	<a class="nav-link g-px-0 g-color-primary--hover font-weight-bold" 
-	                      		href="client/QuanLyThongTinCaNhan.jsp">
+	                      		href="/Shopcongnghe/client/QuanLyThongTinCaNhan.jsp">
 	                    		<%=khachhang_obj.getTenKH()%>
 	                    	</a>
 	                    </li>
@@ -188,9 +171,30 @@
               </ul>
             </div>
             <!-- End Navigation -->
+            <!-- Search -->
+            <div class="d-inline-block g-pos-rel g-valign-middle g-ml-30 g-ml-0--lg g-pa-10--md g-rounded-20 u-shadow-v19">
+              <a href="#!" class="g-font-size-18" aria-haspopup="true" aria-expanded="false" aria-controls="searchform-1" data-dropdown-target="#searchform-1" data-dropdown-type="css-animation" data-dropdown-duration="300" data-dropdown-animation-in="fadeInUp"
+              data-dropdown-animation-out="fadeOutDown">
+                <i class="fa fa-search"></i>
+              </a>
+              <!-- Search Form -->
+              <form id="searchform-1" action="Timkiem.jsp" method="get" class="u-searchform-v1 u-dropdown--css-animation u-dropdown--hidden g-bg-white g-mt-25--lg g-mt-15--lg--scrolling g-rounded-20">
+                <div class="input-group g-brd-primary--focus">
+                  <input name="q" class="form-control g-brd-none g-bg-white g-font-size-12 text-uppercase g-rounded-left-20 g-pl-20 g-py-9" type="text" placeholder="Tìm kiếm sản phẩm ...">
+                    <button class="btn input-group-addon d-flex align-items-center g-brd-none g-color-white g-bg-primary g-bg-primary-light-v1--hover g-font-size-13 g-rounded-right-20 g-transition-0_2" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                </div>
+              </form>
+
+              <!-- End Search Form -->
+            </div>
+            <!-- End Search -->
           </div>
         </nav>
       </div>
     </header>
     <!-- End Header -->
+    <jsp:include page="slide.jsp"></jsp:include>
+    <section class="g-min-height-100vh g-flex-centered g-bg-lightblue-radialgradient-circle">
 	

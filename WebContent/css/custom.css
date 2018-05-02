@@ -1,8 +1,15 @@
 /* Extra large devices (large desktops, 1200px and up) */
+/*Font*/
 @font-face{font-family:Encode Sans Regular;src:url('../fonts/EncodeSans-Regular.ttf');}
 @font-face{font-family:Encode Sans Light;src:url('../fonts/EncodeSans-Light.ttf');}
 @font-face{font-family:Encode Sans Bold;src:url('../fonts/EncodeSans-Bold.ttf');}
-*, h1, h2, h3, h4{font-family:Encode Sans Regular}
+.encode-sans{
+	font-family:Encode Sans Regular!important;
+}
+.encode-sans-bold{
+	font-family:Encode Sans Bold!important;
+}
+h1, h2, h3, h4, h5, h6, span,a{font-family:Encode Sans Regular!important}
 .space{padding-top:60px}
 .big-space{padding-top:120px;}
 

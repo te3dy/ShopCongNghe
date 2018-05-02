@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+</section>
 <!-- Footer -->
 <div class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
   <div class="container">
@@ -250,6 +251,7 @@
 <script src="/Shopcongnghe/js/hs.bg-video.js"></script>
 <script src="/Shopcongnghe/js/hs.popup.js"></script>
 <script src="/Shopcongnghe/js/hs.go-to.js"></script>
+<script src="/Shopcongnghe/js/hs.count-qty.js"></script>
 <!-- JS Custom -->
 <script src="/Shopcongnghe/js/custom.js"></script>
 </body>

@@ -7,62 +7,62 @@
 <jsp:include page="header.jsp"></jsp:include>
 <%
 	request.setCharacterEncoding("UTF-8");
-	String tukhoa=request.getParameter("q");
-	SANPHAM_MOD sanpham_mod=new SANPHAM_MOD();
+	String tukhoa = request.getParameter("q");
+	SANPHAM_MOD sanpham_mod = new SANPHAM_MOD();
 %>
-<div id='body-wrapper'>
-	<div id='outer-wrapper'>
-		<div id='wrap2'>
-			<div id='content-wrapper'>
-				<div id='main-wrapper' style="margin-top: 25px;">
-					<div class='home_navigation' id="ao">
-						<h1 class='our_portfolio'
-							style="font-family: Timenewroman; font-size: 34px; color: green;">
-							Kết quả tìm kiếm cho:
-							<%=tukhoa %></h1>
-						<span class='line-home'></span>
-
-					</div>
-
-					<div class="new_products">
-						<%
-					
-               		ResultSet dskq=sanpham_mod.TimSanphamKhachhang(tukhoa);
-               		if(dskq!=null)
-               		{
-               			while(dskq.next())
-               			{
-               				String masp=dskq.getString("MASP");
-               				String tensp=dskq.getString("TENSP");
-               				String hinhanh=dskq.getString("HINHANH");
-               				int giasp=dskq.getInt("GIASP");
-               %>
-
-						<div class="new_prod_box">
-							<div class="new_prod_bg">
-
-								<span class="new_icon"><img src="Images/new_icon.gif" />
-								</span>
-
-								<div class="new_prod_img">
-									<a href="chitietsanpham.jsp?masp=<%=masp%>"><img
-										src="hinhanh/<%=hinhanh%>" class="thumb" /></a> <a
-										href="chitietsanpham.jsp?masp=<%=masp%>" style="width: 250px;"><%=tensp %></a>
-									<a href="chitietsanpham.jsp?masp=<%=masp%>"
-										style="width: 250px; color: red; font-size: 20px; font-family: OpenSans-Bold">Giá:<fmt:formatNumber value="<%=giasp %>" minFractionDigits="0"/>đ</a>
-								</div>
-							</div>
-						</div>
-
-						<%
-               			}
-               		}
-                %>
-					</div>
-
+<div class="container">
+	<div class="u-heading-v3-1 g-mb-40">
+		<h2
+			class="h3 u-heading-v3__title g-brd-primary encode-sans">
+			Kết quả tìm kiếm cho:
+			<%=tukhoa%>
+		</h2>
+	</div>
+	<div class="row">
+		<%
+			ResultSet dskq = sanpham_mod.TimSanphamKhachhang(tukhoa);
+			if (dskq != null) {
+				while (dskq.next()) {
+					String masp = dskq.getString("MASP");
+					String tensp = dskq.getString("TENSP");
+					String hinhanh = dskq.getString("HINHANH");
+					int giasp = dskq.getInt("GIASP");
+		%>
+		<div class="col-md-12 col-lg-4 g-mb-30">
+			<!-- Article -->
+			<article
+				class="text-center g-bg-white u-shadow-v24 u-shadow-v1-5--hover h-100 g-overflow-hidden">
+			<!-- Article Image -->
+			<div class="g-pos-rel">
+				<a href="chitietsanpham.jsp?masp=<%=masp%>"> <img
+					class="w-100 product-image" src="hinhanh/<%=hinhanh%>"
+					alt="Image Description">
+				</a>
+				<div
+					class="u-ribbon-v1 g-bg-primary g-font-weight-600 g-font-size-17 g-top-0 g-left-0 p-0">
+					<span class="d-block g-color-white g-pa-15"><fmt:formatNumber
+							value="<%=giasp%>" minFractionDigits="0" /> VND</span>
 				</div>
 			</div>
+			<!-- End Article Image --> 
+			<!-- Article Content -->
+			<div class="g-pa-30">
+				<!-- Article Info -->
+				<h3 class="h4 g-mb-10">
+					<a
+						class="g-color-main g-color-primary--hover g-text-underline--none--hover"
+						href="chitietsanpham.jsp?masp=<%=masp%>"><%=tensp%></a>
+				</h3>
+				<!-- End Article Info -->
+			</div>
+			<!-- End Article Content --> 
+			</article>
+			<!-- End Article -->
 		</div>
+		<%
+			}
+			}
+		%>
 	</div>
 </div>
 <jsp:include page="footer.jsp"></jsp:include>
