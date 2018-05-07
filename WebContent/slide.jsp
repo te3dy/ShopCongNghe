@@ -6,7 +6,7 @@
 	data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
 	<div
 		class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center"
-		style="height: 120%; background-image: url('Images/iPhone-X.jpg');"></div>
+		style="height: 120%; background-image: url('/Shopcongnghe/Images/iPhone-X.jpg');"></div>
 
 	<div class="container g-py-200">
 		<div class="row">

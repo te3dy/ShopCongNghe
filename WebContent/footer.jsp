@@ -11,7 +11,7 @@
           <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Giới Thiệu</h2>
         </div>
 
-        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
+        <p></p>
       </div>
       <!-- End Footer Content -->
 

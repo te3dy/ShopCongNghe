@@ -124,7 +124,7 @@ label.error {
 							</select>
 							<div class="col-md-6 g-mb-20 form-group">
 								<select
-									class="js-custom-select u-select-v1 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12"
+									class="js-custom-select u-select-v1 g-brd-gray-light-v3 g-color-gray-dark-v5 rounded g-py-12 h-100"
 									style="width: 100%;" data-placeholder="Giới tính"
 									data-open-icon="fa fa-angle-down"
 									data-close-icon="fa fa-angle-up" id="ckGioiTinhKH"

@@ -131,6 +131,4 @@
 										href="/Shopcongnghe/admin/Quanlyhoadon.jsp">Lập hóa đơn</a></li>
 								</ul>
 							</div>
-							<div class="powered_by"> Nhóm thực hiện: <b><br />- Lê Văn Phú <br />- Ngô Sơn Lâm <br />-Nguyễn Minh Trí<br />- Nguyễn Trần Anh Tú <br />- Đàm Minh Vũ
-							</div>
 						</td>

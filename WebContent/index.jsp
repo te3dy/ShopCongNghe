@@ -5,6 +5,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="slide.jsp"></jsp:include>
 <div class="container">
 	<!-- Products Block -->
 	<div class="u-heading-v3-1 g-my-40">

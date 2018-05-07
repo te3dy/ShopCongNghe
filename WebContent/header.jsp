@@ -195,6 +195,5 @@
       </div>
     </header>
     <!-- End Header -->
-    <jsp:include page="slide.jsp"></jsp:include>
-    <section class="g-min-height-100vh g-flex-centered g-bg-lightblue-radialgradient-circle">
+    <section class="g-min-height-100vh g-bg-lightblue-radialgradient-circle">
 	
