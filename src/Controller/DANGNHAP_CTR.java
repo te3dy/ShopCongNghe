@@ -79,7 +79,7 @@ public class DANGNHAP_CTR extends HttpServlet {
 			}
 			else
 			{
-				request.setAttribute("thongbao", "Đăng nhập thất bại, Tài khoản hoặc Mật khẩu sai");
+				request.setAttribute("thongbao", "Thông báo ! Tài khoản hoặc mật khẩu sai");
 				request.getRequestDispatcher("Dangnhap.jsp").forward(request, response);
 			}
 			

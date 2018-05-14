@@ -52,7 +52,7 @@
 							</div>
 							<div class="col-5 align-self-center text-right">
 								<button class="btn btn-md u-btn-primary rounded g-py-13 g-px-25"
-									type="submit" name="wp-submit" id="wp-submit">Đăng nhập</button>
+									type="submit" name="wp-submit" id="login">Đăng nhập</button>
 							</div>
 						</div>
 						
