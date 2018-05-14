@@ -12,15 +12,6 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- 
-		<web-aap>: Phần tử này đại diện cho toàn bộ ứng dụng của file web.xml
-		<servlet> : Đây là phần tử con của và đại diện cho servlet
-		<servlet-name> : Đây là phần tử con của servlet và được sử dụng để đại diện cho tên của servlet
-		<servlet-class> : Đây là phần tử con của servlet và được sử dụng để đại diện cho lớp servlet.
-		<servlet-mapping> : Đây là phần tử con của và được sử dụng để ánh xạ servlet
-		<url-pattern> : Đây là phần tử con của servlet-mapping và được sử dụng cho phía máy khách để gọi servlet, 
-		hay nói cách khác là url tương ứng cho servlet.
- 	-->
 	<servlet>
 		<servlet-name>Sanpham</servlet-name>
 		<servlet-class>Controller.SANPHAM_CTR</servlet-class>
