@@ -12,7 +12,7 @@ public class KETNOI_MOD {
 			String url="jdbc:sqlserver://localhost:6883;databaseName=SHOPCONGNGHE;useUnicode=true;characterEncoding=UTF-8";
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			try {
-				cnn=DriverManager.getConnection(url,"sa","admin");
+				cnn=DriverManager.getConnection(url,"sa","Lovantuan040797");
 			} catch (SQLException e) {
 			
 				e.printStackTrace();

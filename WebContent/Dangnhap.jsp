@@ -25,9 +25,10 @@
 				<label for="Matkhau">Mật khẩu<br /> <input type="password"
 					name="Matkhau" id="Matkhau" class="input" value="" size="20" /></label>
 			</p>
-			<input type="hidden" name="url"
+			<input type="hidden" name="url" id="label"
 				value="<%=request.getRequestURI().toString()%>">
-			<p style="color: red">
+			<p style="color: red" >
+			<p id="label1">
 				<%if(request.getAttribute("thongbao")!=null) out.print(request.getAttribute("thongbao")); %>
 			</p>
 			<p class="forgetmenot">

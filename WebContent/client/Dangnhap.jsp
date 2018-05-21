@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <jsp:include page="../header.jsp" flush="true"></jsp:include>
-
+<script src="/Shopcongnghe/js/checkValid.js"></script>
 <!-- Login -->
 <div class="container g-py-100">
 	<div class="row justify-content-center">
@@ -52,11 +52,11 @@
 							</div>
 							<div class="col-5 align-self-center text-right">
 								<button class="btn btn-md u-btn-primary rounded g-py-13 g-px-25"
-									type="submit" name="wp-submit" id="login">Đăng nhập</button>
+									type="submit" name="wp-submit" id="login" onclick="return check(this.form);">Đăng nhập</button>
 							</div>
 						</div>
 						
-						<p class="g-color-primary g-my-30 text-center">
+						<p class="g-color-primary g-my-30 text-center" id = "check">
 							<%
 								//HttpSession a=r
 								session = request.getSession();

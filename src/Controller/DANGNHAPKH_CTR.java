@@ -88,7 +88,7 @@ public class DANGNHAPKH_CTR extends HttpServlet {
 		}
 		else
 		{
-			session.setAttribute("thongbao", "Thông báo ! Tài khoản hoặc mật khẩu sai.");
+			session.setAttribute("thongbao", "Tài khoản hoặc mật khẩu sai.");
 			/*request.setAttribute("thongbao", "Thông báo ! Tài khoản hoặc mật khẩu sai.");*/
 			response.sendRedirect("client/Dangnhap.jsp");
 		}
